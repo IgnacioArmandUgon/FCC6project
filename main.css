@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 700px) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        display: grid;
+        grid-template-rows: 1% 33% 33% 33%;
+        width: 100%;
+        text-decoration: none;
+        background: rgb(0, 95, 95);
+        z-index: 1;
+    }
+}
+
+@media (min-width: 700px) {
+    #navbar {
+        position: fixed;
+        display: grid;
+        grid-column: 3;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        width: 100%;
+        top: 0;
+        text-decoration: none;
+        background: rgb(0, 95, 95);
+        z-index: 1;
+    }
+    #foto {
+        padding: 2em;
+        background-color: rgba(255, 255, 255, 0.589);
+    }
+}
+
+#navbar div {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(0, 104, 104);
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    margin-bottom: -9px;
+}
+
+#welcome-section {
+    margin-top: 25px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+}
+
+#img-border {
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 8px 8px 3px 8px;
+    background: linear-gradient(to right, rgba(2, 126, 126, 0.89), rgb(1, 77, 77));
+}
+
+#projects {
+    height: 100vh;
+    width: 100vw;
+}
+
+#intro {
+    display: block;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 140px;
+}
+
+@media (max-width: 700px) {
+    .project-tile {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 2em;
+        gap: 2em;
+    }
+}
+
+@media (min-width: 700px) {
+    .project-tile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2em;
+        gap: 2em;
+    }
+}
+
+.pro {
+    text-align: center;
+    background: linear-gradient(120deg, rgb(0, 141, 141), rgb(12, 184, 184), rgb(0, 128, 128));
+    padding: 20px 0 70px 0;
+    border-radius: 20px;
+}
+
+.pro p {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.proimg {
+    padding-top: 30px;
+    width: 75%;
+}
+
+#img-border h1 {
+    font-size: 0px;
+}
