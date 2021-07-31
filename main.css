@@ -122,6 +122,7 @@ body {
 .proimg {
     padding-top: 30px;
     width: 75%;
+    border: black solid 1px;
 }
 
 #img-border h1 {
